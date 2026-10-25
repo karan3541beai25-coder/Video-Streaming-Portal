@@ -1,0 +1,3353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="LocoFlix - Video Streaming Portal">
+
+    <title>LocoFlix | Video Streaming Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+          href="streaming.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                    HOME PAGE
+===================================================== -->
+
+<div id="homePage">
+
+
+    <!-- =================================================
+                        HEADER
+    ================================================== -->
+
+    <header class="site-header">
+
+        <nav class="navbar">
+
+
+            <!-- LOGO -->
+
+            <a href="#home"
+               class="logo">
+
+                LOCO<span>FLIX</span>
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#movies">
+                        Movies
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        Contact Us
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- NAVIGATION BUTTONS -->
+
+            <div class="nav-buttons">
+
+                <button class="nav-login"
+                        onclick="openLogin()">
+
+                    Sign In
+
+                </button>
+
+
+                <button class="nav-signup"
+                        onclick="openSignup()">
+
+                    Register
+
+                </button>
+
+
+                <button class="hamburger"
+                        id="hamburger"
+                        onclick="toggleMenu()">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+            <button id="themeToggle" class="theme-toggle">
+    🌙 Dark Mode
+</button>
+
+
+        </nav>
+
+
+        <!-- =================================================
+                        MOBILE NAVIGATION
+        ================================================== -->
+
+        <div class="mobile-menu"
+             id="mobileMenu">
+
+            <a href="#home">
+
+                <i class="fa-solid fa-house"></i>
+
+                Home
+
+            </a>
+
+
+            <a href="#movies">
+
+                <i class="fa-solid fa-film"></i>
+
+                Movies
+
+            </a>
+
+
+            <a href="#about">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                About Us
+
+            </a>
+
+
+            <a href="#contact">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                Contact Us
+
+            </a>
+
+
+            <button onclick="openLogin()">
+
+                Sign In
+
+            </button>
+
+
+            <button onclick="openSignup()">
+
+                Register
+
+            </button>
+
+        </div>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+                            MAIN
+    ================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+                            HOME
+        ================================================== -->
+
+        <section id="home"
+                 class="hero-section">
+
+
+            <div class="hero-content">
+
+
+                <p class="hero-label">
+
+                    UNLIMITED ENTERTAINMENT
+
+                </p>
+
+
+                <h1>
+
+                    Movies.
+                    <span>Shows.</span>
+                    Memories.
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    Welcome to LocoFlix, your entertainment
+                    destination for movies, shows and
+                    unforgettable stories.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+
+                    <button class="primary-button"
+                            onclick="openLogin()">
+
+                        <i class="fa-solid fa-play"></i>
+
+                        Watch Now
+
+                    </button>
+
+
+                    <button class="secondary-button"
+                            onclick="openSignup()">
+
+                        Join LocoFlix
+
+                    </button>
+
+
+                </div>
+
+
+                <div class="hero-features">
+
+
+                    <span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        HD Streaming
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Multiple Genres
+
+                    </span>
+
+
+                    <span>
+
+                        <i class="fa-solid fa-check"></i>
+
+                        Watch Anywhere
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+                        MOVIES PREVIEW
+        ================================================== -->
+
+        <section id="movies"
+                 class="home-section protected-section">
+
+
+            <header class="section-header">
+
+
+                <div>
+
+                    <p class="section-label">
+
+                        EXPLORE
+
+                    </p>
+
+
+                    <h2>
+
+                        Popular Movies
+
+                    </h2>
+
+                </div>
+
+
+                <button onclick="openLogin()"
+                        class="view-all-button">
+
+                    View All
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </header>
+
+
+
+            <div class="preview-grid">
+
+
+                <!-- MOVIE 1 -->
+
+                <article class="preview-card">
+
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
+                        alt="Wonder Woman 1984 movie poster">
+
+
+                    <div class="preview-info">
+
+
+                        <h3>
+
+                            Wonder Woman 1984
+
+                        </h3>
+
+
+                        <p>
+
+                            Action • Adventure
+
+                        </p>
+
+
+                        <button onclick="openLogin()">
+
+                            <i class="fa-solid fa-play"></i>
+
+                            Watch
+
+                        </button>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- MOVIE 2 -->
+
+                <article class="preview-card">
+
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+                        alt="Inception movie poster">
+
+
+                    <div class="preview-info">
+
+
+                        <h3>
+
+                            Inception
+
+                        </h3>
+
+
+                        <p>
+
+                            Sci-Fi • Thriller
+
+                        </p>
+
+
+                        <button onclick="openLogin()">
+
+                            <i class="fa-solid fa-play"></i>
+
+                            Watch
+
+                        </button>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- MOVIE 3 -->
+
+                <article class="preview-card">
+
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                        alt="Interstellar movie poster">
+
+
+                    <div class="preview-info">
+
+
+                        <h3>
+
+                            Interstellar
+
+                        </h3>
+
+
+                        <p>
+
+                            Sci-Fi • Drama
+
+                        </p>
+
+
+                        <button onclick="openLogin()">
+
+                            <i class="fa-solid fa-play"></i>
+
+                            Watch
+
+                        </button>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- MOVIE 4 -->
+
+                <article class="preview-card">
+
+
+                    <img
+                        src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                        alt="Joker movie poster">
+
+
+                    <div class="preview-info">
+
+
+                        <h3>
+
+                            Joker
+
+                        </h3>
+
+
+                        <p>
+
+                            Crime • Drama
+
+                        </p>
+
+
+                        <button onclick="openLogin()">
+
+                            <i class="fa-solid fa-play"></i>
+
+                            Watch
+
+                        </button>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+                        WHY LOCOFLIX
+        ================================================== -->
+
+        <section class="features-section">
+
+
+            <header class="section-header centered">
+
+
+                <p class="section-label">
+
+                    WHY LOCOFLIX
+
+                </p>
+
+
+                <h2>
+
+                    Everything You Love
+
+                </h2>
+
+
+            </header>
+
+
+
+            <div class="feature-grid">
+
+
+                <article class="feature-box">
+
+
+                    <i class="fa-solid fa-film"></i>
+
+
+                    <h3>
+
+                        Huge Collection
+
+                    </h3>
+
+
+                    <p>
+
+                        Discover movies and entertainment
+                        from different genres and languages.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <article class="feature-box">
+
+
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+
+                    <h3>
+
+                        Watch Anywhere
+
+                    </h3>
+
+
+                    <p>
+
+                        Enjoy your favourite content
+                        on desktop, tablet or mobile.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <article class="feature-box">
+
+
+                    <i class="fa-solid fa-crown"></i>
+
+
+                    <h3>
+
+                        Premium Experience
+
+                    </h3>
+
+
+                    <p>
+
+                        Unlock premium entertainment
+                        and exclusive content.
+
+                    </p>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+                            ABOUT US
+        ================================================== -->
+
+        <section id="about"
+                 class="about-section protected-section">
+
+
+            <div class="about-image">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/original/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
+                    alt="Movie theatre">
+
+
+            </div>
+
+
+
+            <article class="about-content">
+
+
+                <p class="section-label">
+
+                    ABOUT US
+
+                </p>
+
+
+                <h2>
+
+                    Welcome to LocoFlix
+
+                </h2>
+
+
+                <p>
+
+                    LocoFlix is a college project based on
+                    the concept of a modern video streaming
+                    platform.
+
+                </p>
+
+
+                <p>
+
+                    Our objective is to create an attractive,
+                    responsive and user-friendly platform where
+                    users can discover movies and entertainment.
+
+                </p>
+
+
+                <p>
+
+                    The first version of this project focuses
+                    on HTML, CSS and basic JavaScript.
+                    Future versions can include React,
+                    databases, APIs and complete authentication.
+
+                </p>
+
+
+                <button class="primary-button"
+                        onclick="openLogin()">
+
+                    Explore LocoFlix
+
+                </button>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+                        CONTACT US
+        ================================================== -->
+
+        <section id="contact"
+                 class="contact-section protected-section">
+
+
+            <header class="section-header centered">
+
+
+                <p class="section-label">
+
+                    GET IN TOUCH
+
+                </p>
+
+
+                <h2>
+
+                    Contact Us
+
+                </h2>
+
+
+                <p>
+
+                    Have a question about our project?
+                    Send us a message.
+
+                </p>
+
+
+            </header>
+
+
+
+            <div class="contact-container">
+
+
+                <!-- CONTACT FORM -->
+
+                <form class="contact-form"
+                      onsubmit="submitContact(event)">
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+
+                            <label for="contactName">
+
+                                Name
+
+                            </label>
+
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                placeholder="Enter your name"
+                                required>
+
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+
+                            <label for="contactEmail">
+
+                                Email
+
+                            </label>
+
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                placeholder="Enter your email"
+                                required>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+
+                        <label for="contactSubject">
+
+                            Subject
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="contactSubject"
+                            placeholder="Enter subject"
+                            required>
+
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+
+                        <label for="contactMessage">
+
+                            Message
+
+                        </label>
+
+
+                        <textarea
+                            id="contactMessage"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+
+                    </div>
+
+
+
+                    <button type="submit"
+                            class="primary-button">
+
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Send Message
+
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- PROJECT DETAILS -->
+
+                <aside class="contact-details">
+
+
+                    <h3>
+
+                        Project Office
+
+                    </h3>
+
+
+
+                    <div class="contact-item">
+
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+
+                        <div>
+
+
+                            <strong>
+
+                                Address
+
+                            </strong>
+
+
+                            <p>
+
+                                LocoFlix Project Office<br>
+                                Chitkara University Campus<br>
+                                Rajpura, Punjab, India
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="contact-item">
+
+
+                        <i class="fa-solid fa-envelope"></i>
+
+
+                        <div>
+
+
+                            <strong>
+
+                                Email
+
+                            </strong>
+
+
+                            <p>
+
+                                locoflix.project@example.com
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="contact-item">
+
+
+                        <i class="fa-solid fa-clock"></i>
+
+
+                        <div>
+
+
+                            <strong>
+
+                                Working Hours
+
+                            </strong>
+
+
+                            <p>
+
+                                Monday - Friday<br>
+                                9:00 AM - 5:00 PM
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </aside>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+                        HOME FOOTER
+    ================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-content">
+
+
+            <section class="footer-about">
+
+
+                <div class="footer-logo">
+
+                    LOCO<span>FLIX</span>
+
+                </div>
+
+
+                <p>
+
+                    A student-developed video streaming
+                    portal created using HTML, CSS and
+                    JavaScript.
+
+                </p>
+
+
+            </section>
+
+
+
+            <section class="footer-column">
+
+
+                <h3>
+
+                    About Us
+
+                </h3>
+
+
+                <a href="#about">
+
+                    Our Project
+
+                </a>
+
+
+                <a href="#movies">
+
+                    Movies
+
+                </a>
+
+
+            </section>
+
+
+
+            <section class="footer-column">
+
+
+                <h3>
+
+                    Contact Us
+
+                </h3>
+
+
+                <a href="#contact">
+
+                    Contact Form
+
+                </a>
+
+
+                <a href="#contact">
+
+                    Project Office
+
+                </a>
+
+
+            </section>
+
+
+
+            <section class="footer-column">
+
+
+                <h3>
+
+                    Follow Us
+
+                </h3>
+
+
+                <div class="social-icons">
+
+
+                    <a href="#"
+                       aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a href="#"
+                       aria-label="X">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 LocoFlix. All Rights Reserved.
+
+            </p>
+
+
+            <p>
+
+                Academic Project
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+
+
+<!-- =====================================================
+                    MAIN STREAMING PAGE
+===================================================== -->
+
+<div id="streamingPage"
+     class="hidden">
+
+
+    <!-- =================================================
+                    STREAMING HEADER
+    ================================================== -->
+
+    <header class="stream-header">
+
+
+        <nav class="stream-navbar">
+
+
+            <a href="#"
+               class="logo">
+
+                LOCO<span>FLIX</span>
+
+            </a>
+
+
+            <button class="stream-menu-button"
+                    onclick="toggleStreamMenu()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <div class="stream-links"
+                 id="streamLinks">
+
+
+                <a href="#popular">
+
+                    Popular
+
+                </a>
+
+
+                <a href="#continue">
+
+                    Continue Watching
+
+                </a>
+
+
+                <a href="#top5">
+
+                    Top 5
+
+                </a>
+
+
+                <a href="#hindi">
+
+                    Latest Hindi
+
+                </a>
+
+
+                <a href="#bollywood">
+
+                    Bollywood
+
+                </a>
+
+
+                <a href="#mylist">
+
+                    My List
+
+                </a>
+
+
+            </div>
+
+
+
+            <div class="stream-actions">
+
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search movies..."
+                        oninput="searchMovies()">
+
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+
+                </div>
+
+
+
+                <!-- NOTIFICATION -->
+
+                <button class="icon-button"
+                        onclick="toggleNotifications()">
+
+
+                    <i class="fa-regular fa-bell"></i>
+
+
+                    <span class="notification-dot"></span>
+
+
+                </button>
+
+
+
+                <!-- PROFILE -->
+
+                <button class="profile-button"
+                        onclick="toggleProfile()">
+
+
+                    <i class="fa-solid fa-user"></i>
+
+
+                </button>
+
+
+            </div>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+    <!-- =================================================
+                    NOTIFICATION PANEL
+    ================================================== -->
+
+    <aside class="notification-panel"
+           id="notificationPanel">
+
+
+        <h3>
+
+            Notifications
+
+        </h3>
+
+
+        <article>
+
+            <i class="fa-solid fa-film"></i>
+
+            <p>
+
+                New movies have been added.
+
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <i class="fa-solid fa-crown"></i>
+
+            <p>
+
+                Premium content is now available.
+
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <i class="fa-solid fa-fire"></i>
+
+            <p>
+
+                Check today's Top 10 movies.
+
+            </p>
+
+        </article>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+                    PROFILE PANEL
+    ================================================== -->
+
+    <aside class="profile-panel"
+           id="profilePanel">
+
+
+        <div class="profile-heading">
+
+    <div class="profile-avatar">
+        <i class="fa-solid fa-user"></i>
+    </div>
+
+    <div class="profile-info">
+
+        <strong id="profileName">
+            LocoFlix User
+        </strong>
+
+        <small id="profileEmail">
+            user@example.com
+        </small>
+
+        <small id="profileStatus">
+            Premium Member
+        </small>
+
+    </div>
+
+</div>
+
+
+
+        <button onclick="openPremium()"
+        class="primary-button premium-main-button">
+
+    <i class="fa-solid fa-crown"></i>
+
+    Get Premium
+
+</button>
+
+
+
+        <button onclick="logout()">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+                    SEARCH RESULTS
+    ================================================== -->
+
+    <section id="searchSection"
+             class="stream-section hidden">
+
+
+        <header class="stream-section-heading">
+
+            <h2>
+
+                Search Results
+
+            </h2>
+
+        </header>
+
+
+        <div id="searchResults"
+             class="movie-grid">
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                    STREAMING HERO
+    ================================================== -->
+
+    <section class="stream-hero">
+
+
+        <div class="stream-hero-content">
+
+
+            <p class="hero-label">
+
+                #1 TRENDING MOVIE
+
+            </p>
+
+
+            <h1>
+
+                The Dark Knight
+
+            </h1>
+
+
+            <div class="movie-meta">
+
+
+                <span>
+
+                    2026
+
+                </span>
+
+
+                <span>
+
+                    2h 32m
+
+                </span>
+
+
+                <span>
+
+                    U/A 16+
+
+                </span>
+
+
+                <span>
+
+                    Action
+
+                </span>
+
+
+            </div>
+
+
+            <p>
+
+                When darkness rises, a hero must stand
+                against the greatest threat the city
+                has ever faced.
+
+            </p>
+
+
+
+            <div class="stream-hero-buttons">
+
+
+                <button class="primary-button"
+                        onclick="watchMovie('The Dark Knight')">
+
+
+                    <i class="fa-solid fa-play"></i>
+
+                    Watch Now
+
+
+                </button>
+
+
+
+                <button class="secondary-button"
+                        onclick="addToMyList('The Dark Knight')">
+
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    My List
+
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                        POPULAR
+    ================================================== -->
+
+    <section id="popular"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                Popular Movies
+
+            </h2>
+
+
+
+            <div class="slider-buttons">
+
+
+                <button onclick="slideLeft('popularSlider')">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button onclick="slideRight('popularSlider')">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="movie-slider"
+             id="popularSlider">
+
+
+            <!-- AVENGERS -->
+
+            <article class="movie-card"
+                     data-title="Avengers Endgame">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+                    alt="Avengers Endgame">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Avengers Endgame
+
+                    </h3>
+
+
+                    <p>
+
+                        Action • Adventure
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Avengers Endgame')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Avengers Endgame')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- INCEPTION -->
+
+            <article class="movie-card"
+                     data-title="Inception">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+                    alt="Inception">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Inception
+
+                    </h3>
+
+
+                    <p>
+
+                        Sci-Fi • Thriller
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Inception')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Inception')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- INTERSTELLAR -->
+
+            <article class="movie-card"
+                     data-title="Interstellar">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                    alt="Interstellar">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Interstellar
+
+                    </h3>
+
+
+                    <p>
+
+                        Sci-Fi • Drama
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Interstellar')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Interstellar')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- JOKER -->
+
+            <article class="movie-card"
+                     data-title="Joker">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                    alt="Joker">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Joker
+
+                    </h3>
+
+
+                    <p>
+
+                        Crime • Drama
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Joker')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Joker')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- AVATAR -->
+
+            <article class="movie-card"
+                     data-title="Avatar">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+                    alt="Avatar">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Avatar
+
+                    </h3>
+
+
+                    <p>
+
+                        Adventure • Fantasy
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Avatar')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Avatar')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- BLACK PANTHER -->
+
+            <article class="movie-card"
+                     data-title="Black Panther">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+                    alt="Black Panther">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Black Panther
+
+                    </h3>
+
+
+                    <p>
+
+                        Action • Adventure
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Black Panther')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Black Panther')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                    CONTINUE WATCHING
+    ================================================== -->
+
+    <section id="continue"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                Continue Watching
+
+            </h2>
+
+
+            <div class="slider-buttons">
+
+
+                <button onclick="slideLeft('continueSlider')">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button onclick="slideRight('continueSlider')">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="movie-slider"
+             id="continueSlider">
+
+
+            <article class="continue-card">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
+                    alt="Wonder Woman">
+
+
+                <div class="watch-progress">
+
+                    <div style="width:65%;"></div>
+
+                </div>
+
+
+                <p>
+
+                    65% watched
+
+                </p>
+
+
+            </article>
+
+
+
+            <article class="continue-card">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/5KCVkau1HEl7ZzfPsKAPM0sMiKc.jpg"
+                    alt="Movie">
+
+
+                <div class="watch-progress">
+
+                    <div style="width:40%;"></div>
+
+                </div>
+
+
+                <p>
+
+                    40% watched
+
+                </p>
+
+
+            </article>
+
+
+
+            <article class="continue-card">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg"
+                    alt="Movie">
+
+
+                <div class="watch-progress">
+
+                    <div style="width:80%;"></div>
+
+                </div>
+
+
+                <p>
+
+                    80% watched
+
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                            TOP 5
+    ================================================== -->
+
+    <section id="top5"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                Top 5 Today
+
+            </h2>
+
+
+        </header>
+
+
+
+        <div class="top-ten-slider">
+
+
+            <article class="top-five-card">
+
+                <span>1</span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg"
+                    alt="Movie 1">
+
+            </article>
+
+
+            <article class="top-five-card">
+
+                <span>2</span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+                    alt="Movie 2">
+
+            </article>
+
+
+            <article class="top-five-card">
+
+                <span>3</span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+                    alt="Movie 3">
+
+            </article>
+
+
+            <article class="top-five-card">
+
+                <span>4</span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+                    alt="Movie 4">
+
+            </article>
+
+
+            <article class="top-five-card">
+
+                <span>5</span>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg"
+                    alt="Movie 5">
+
+            </article>
+
+             
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                        LATEST HINDI
+    ================================================== -->
+
+    <section id="hindi"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                Latest Hindi
+
+            </h2>
+
+
+            <div class="slider-buttons">
+
+
+                <button onclick="slideLeft('hindiSlider')">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button onclick="slideRight('hindiSlider')">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="movie-slider"
+             id="hindiSlider">
+
+
+            <article class="movie-card"
+                     data-title="Jawan">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/jFt1gS4BGHlK8xt76Y3De5r4I2M.jpg"
+                    alt="Jawan">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Jawan
+
+                    </h3>
+
+
+                    <p>
+
+                        Action • Hindi
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Jawan')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Jawan')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="movie-card"
+                     data-title="Pathaan">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/arf00BkwvXo0CFKbaD9uY9fM8p.jpg"
+                    alt="Pathaan">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Pathaan
+
+                    </h3>
+
+
+                    <p>
+
+                        Action • Hindi
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Pathaan')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Pathaan')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="movie-card"
+                     data-title="Animal">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/6ZfiG4P7jivJV0wKzJ2j5T8Q2pA.jpg"
+                    alt="Animal">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Animal
+
+                    </h3>
+
+
+                    <p>
+
+                        Drama • Hindi
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Animal')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Animal')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="movie-card"
+                     data-title="Dangal">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/whEM7XgS4t7x0zvV0p8Z9bXQ8mR.jpg"
+                    alt="Dangal">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Dangal
+
+                    </h3>
+
+
+                    <p>
+
+                        Drama • Sports
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Dangal')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Dangal')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                        BOLLYWOOD
+    ================================================== -->
+
+    <section id="bollywood"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                Latest Bollywood
+
+            </h2>
+
+
+            <div class="slider-buttons">
+
+
+                <button onclick="slideLeft('bollywoodSlider')">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+                <button onclick="slideRight('bollywoodSlider')">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="movie-slider"
+             id="bollywoodSlider">
+
+
+            <article class="movie-card"
+                     data-title="Dunki">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/1XDDXPXGiI8id7MrUxK36ke7gkX.jpg"
+                    alt="Dunki">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Dunki
+
+                    </h3>
+
+
+                    <p>
+
+                        Comedy • Drama
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Dunki')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Dunki')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="movie-card"
+                     data-title="Rocky Aur Rani">
+
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500/ikjE5y5q2xJz5wG8o9b6x4g8t4H.jpg"
+                    alt="Rocky Aur Rani Kii Prem Kahaani">
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Rocky Aur Rani
+
+                    </h3>
+
+
+                    <p>
+
+                        Romance • Drama
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Rocky Aur Rani')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Rocky Aur Rani')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <article class="movie-card"
+                     data-title="Brahmastra">
+
+<img
+    src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+    alt="Brahmastra"
+>
+
+
+                <div class="movie-card-overlay">
+
+
+                    <h3>
+
+                        Brahmastra
+
+                    </h3>
+
+
+                    <p>
+
+                        Fantasy • Adventure
+
+                    </p>
+
+
+                    <div>
+
+
+                        <button onclick="watchMovie('Brahmastra')">
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </button>
+
+
+                        <button onclick="addToMyList('Brahmastra')">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                        MY LIST
+    ================================================== -->
+
+    <section id="mylist"
+             class="stream-section">
+
+
+        <header class="stream-section-heading">
+
+
+            <h2>
+
+                My List
+
+            </h2>
+
+
+        </header>
+
+
+
+        <div id="myListContainer"
+             class="movie-grid">
+
+
+            <div class="empty-list">
+
+
+                <i class="fa-solid fa-bookmark"></i>
+
+
+                <h3>
+
+                    Your list is empty
+
+                </h3>
+
+
+                <p>
+
+                    Add movies using the + button.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                        PREMIUM
+    ================================================== -->
+
+    <section class="premium-section">
+
+
+        <div class="premium-inner">
+
+
+            <i class="fa-solid fa-crown"></i>
+
+
+            <p class="section-label">
+
+                PREMIUM EXPERIENCE
+
+            </p>
+
+
+            <h2>
+
+                Take Your Entertainment
+                To The Next Level
+
+            </h2>
+
+
+            <p>
+
+                Enjoy an enhanced streaming experience
+                with our premium plans.
+
+            </p>
+
+
+            <button onclick="openPremium()"
+                    class="primary-button">
+
+                Get Premium
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =================================================
+                    STREAMING FOOTER
+    ================================================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                © 2026 LocoFlix. All Rights Reserved.
+
+            </p>
+
+
+            <button onclick="logout()"
+                    class="logout-footer-button">
+
+                Logout
+
+            </button>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- SCROLL TO TOP -->
+
+    <button class="scroll-top"
+            id="scrollTop"
+            onclick="scrollToTop()">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+                    LOGIN MODAL
+===================================================== -->
+
+<dialog id="loginModal"
+        class="modal-dialog">
+
+
+    <div class="modal-box">
+
+
+        <button class="close-modal"
+                onclick="closeLogin()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-logo">
+
+            LOCO<span>FLIX</span>
+
+        </div>
+
+
+        <h2>
+
+            Welcome Back
+
+        </h2>
+
+
+        <p class="modal-description">
+
+            Sign in to continue watching.
+
+        </p>
+
+
+
+        <form id="loginForm"
+              onsubmit="loginUser(event)">
+
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+
+                <label for="loginEmail">
+
+                    Email
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+
+                    <i class="fa-solid fa-envelope"></i>
+
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+
+                <label for="loginPassword">
+
+                    Password
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+
+                    <i class="fa-solid fa-lock"></i>
+
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- CAPTCHA -->
+
+            <div class="captcha-area">
+
+
+                <label>
+
+                    CAPTCHA
+
+                </label>
+
+
+                <div class="captcha-row">
+
+
+                    <div id="captchaText"
+                         class="captcha-text">
+
+                    </div>
+
+
+                    <button type="button"
+                            onclick="generateCaptcha()">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                    </button>
+
+
+                </div>
+
+
+                <input
+                    type="text"
+                    id="captchaInput"
+                    placeholder="Enter CAPTCHA"
+                    required>
+
+
+            </div>
+
+
+
+            <!-- FORGOT PASSWORD -->
+
+            <button type="button"
+                    class="forgot-password"
+                    onclick="forgotPassword()">
+
+                Forgot Password?
+
+            </button>
+
+
+
+            <!-- SUBMIT -->
+
+            <button type="submit"
+                    class="modal-submit">
+
+                Sign In
+
+            </button>
+
+
+        </form>
+
+
+
+        <p class="switch-account">
+
+
+            Don't have an account?
+
+
+            <button onclick="switchToSignup()">
+
+                Register
+
+            </button>
+
+
+        </p>
+
+
+    </div>
+
+
+</dialog>
+
+
+
+<!-- =====================================================
+                    SIGNUP MODAL
+===================================================== -->
+
+<dialog id="signupModal"
+        class="modal-dialog">
+
+
+    <div class="modal-box">
+
+
+        <button class="close-modal"
+                onclick="closeSignup()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div class="modal-logo">
+
+            LOCO<span>FLIX</span>
+
+        </div>
+
+
+        <h2>
+
+            Create Account
+
+        </h2>
+
+
+        <p class="modal-description">
+
+            Register to start your LocoFlix journey.
+
+        </p>
+
+
+
+        <form onsubmit="registerUser(event)">
+
+
+            <!-- NAME -->
+
+            <div class="input-group">
+
+
+                <label for="registerName">
+
+                    Full Name
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+
+                    <i class="fa-solid fa-user"></i>
+
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your name"
+                        required>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="input-group">
+
+
+                <label for="registerEmail">
+
+                    Email
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+
+                    <i class="fa-solid fa-envelope"></i>
+
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                        required>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PASSWORD -->
+
+            <div class="input-group">
+
+
+                <label for="registerPassword">
+
+                    Password
+
+                </label>
+
+
+                <div class="input-wrapper">
+
+
+                    <i class="fa-solid fa-lock"></i>
+
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <button type="submit"
+                    class="modal-submit">
+
+                Create Account
+
+            </button>
+
+
+        </form>
+
+
+
+        <p class="switch-account">
+
+
+            Already have an account?
+
+
+            <button onclick="switchToLogin()">
+
+                Sign In
+
+            </button>
+
+
+        </p>
+
+
+    </div>
+
+
+</dialog>
+
+
+
+<!-- =====================================================
+                    PREMIUM MODAL
+===================================================== -->
+
+<dialog id="premiumModal"
+        class="modal-dialog">
+
+
+    <div class="premium-modal-box">
+
+
+        <button class="close-modal"
+                onclick="closePremium()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <i class="fa-solid fa-crown premium-crown"></i>
+
+
+        <p class="section-label">
+
+            PREMIUM
+
+        </p>
+
+
+        <h2>
+
+            Choose Your Plan
+
+        </h2>
+
+
+
+        <div class="plans">
+
+
+            <!-- MONTHLY -->
+
+            <article class="plan">
+
+
+                <h3>
+
+                    Monthly
+
+                </h3>
+
+
+                <strong>
+
+                    ₹149
+
+                </strong>
+
+
+                <p>
+
+                    per month
+
+                </p>
+
+
+                <button onclick="choosePlan('Monthly')">
+
+                    Choose Plan
+
+                </button>
+
+
+            </article>
+
+
+
+            <!-- YEARLY -->
+
+            <article class="plan popular-plan">
+
+
+                <span>
+
+                    POPULAR
+
+                </span>
+
+
+                <h3>
+
+                    Yearly
+
+                </h3>
+
+
+                <strong>
+
+                    ₹999
+
+                </strong>
+
+
+                <p>
+
+                    per year
+
+                </p>
+
+
+                <button onclick="choosePlan('Yearly')">
+
+                    Choose Plan
+
+                </button>
+
+
+            </article>
+
+
+
+            <!-- LIFETIME -->
+
+            <article class="plan">
+
+
+                <h3>
+
+                    Lifetime
+
+                </h3>
+
+
+                <strong>
+
+                    ₹2999
+
+                </strong>
+
+
+                <p>
+
+                    One time
+
+                </p>
+
+
+                <button onclick="choosePlan('Lifetime')">
+
+                    Choose Plan
+
+                </button>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</dialog>
+
+
+
+<!-- =====================================================
+                    JAVASCRIPT
+===================================================== -->
+
+<script src="portal.js"></script>
+
+
+
+<script>
+document.addEventListener('error', function (event) {
+    const img = event.target;
+
+    if (
+        img &&
+        img.tagName === 'IMG' &&
+        !img.dataset.fallbackTried
+    ) {
+        img.dataset.fallbackTried = '1';
+
+        if (img.alt === 'Brahmastra') {
+            img.src =
+                'https://placehold.co/300x450/1a1a1a/ffffff?text=Brahmastra';
+        } else {
+            img.src =
+                'https://placehold.co/300x450/1a1a1a/ffffff?text=Image+Unavailable';
+        }
+    }
+}, true);
+</script>
+</body>
+
+</html>
